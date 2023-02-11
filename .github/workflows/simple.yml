@@ -1,6 +1,8 @@
 name: Testing Custom GitHub actions
 
-on: [push]
+on: 
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   main:
